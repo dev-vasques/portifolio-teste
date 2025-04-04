@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap');
+
+:root {
+    --color1: #000000;
+    --color2: #02020241;
+    --color3: #8b00ff;
+    --color4: #7a0000;
+    --color5: #ffffff;
+    --color6: #ff6100;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Teko", sans-serif;
+}
+
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--color1);
+    color: var(--color5);
+
+}
+
+header h1 {}
+
+#header-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 60px;
+    color: var(--color5);
+
+
+
+
+
+}
+
+#header-nav a {
+    color: var(--color5);
+    text-decoration: none;
+    font-size: 22px;
+
+}
+
+
+
+#personal {
+    position: relative;
+    width: 100%;
+
+
+}
+
+.personal-landscape {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    z-index: 1;
+    position: relative;
+}
+
+.personal-landscape img {
+    width: 100%;
+    height: auto;
+    display: block;
+
+}
+
+.personal-photo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.personal-photo img {
+    border-radius: 50%;
+    height: auto;
+    width: 400px;
+    transition: all 1.5s ease;
+
+}
+
+.personal-photo img:hover {
+    width: 450px;
+}
+
+.personal-socialmedia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 75px;
+    margin-top: 20px;
+    top: 72%;
+    z-index: 2;
+    position: absolute;
+    width: 235px;
+    height: 30px;
+
+    border-radius: 200px;
+
+}
+
+.personal-socialmedia i {
+    font-size: 50px;
+    color: var(--color5);
+    z-index: 2;
+    position: absolute;
+    transform: translate(-54%, -50%);
+    transition: all 0.4s ease;
+}
+
+.personal-socialmedia i:hover {
+    font-size: 70px;
+}
+
+.personal-text h3 {
+
+    z-index: 2;
+    position: absolute;
+    color: var(--color5);
+    top: 68.5%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+
+
+}
+
+#typing-text {
+    top: 80%;
+    right:38%;
+    position: absolute;
+    color: var(--color5);
+    font-size: 45px;
+    box-shadow: 3px 3px 3px 3px(--color2);
+}
+

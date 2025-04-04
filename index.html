@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Portifólio, Operacional, Trabalho">
+    <meta name="description" content="Personal landing page">
+    <meta http-equiv="X-UA-Compatible" content="IE=egde">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--Browser_Icon-->
+    <link rel="icon" type="image/svg+xml" href="assets/img/circle-user-solid.svg">
+
+    <!--javascript-->
+    <script src="assets/javascript/script.js"></script>
+
+
+
+
+
+
+
+    <!--CSS_Archive-->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>Portifólio</title>
+</head>
+
+<body>
+    <header>
+
+        <h1>Portifolio</h1>
+
+        <nav id="header-nav">
+
+            <a href="">Sobre mim</a>
+            <a href="">Meu curriculo</a>
+            <a href="">Contato</a>
+
+        </nav>
+    </header>
+
+
+    <main>
+        <section id="personal">
+
+            <div class="personal-photo">
+                <img src="assets/img/meu rosto.png" alt="">
+            </div>
+
+            <div class="personal-landscape">
+                <img src="assets/img/peakpx2.png" alt="">
+
+
+
+                <div class="personal-socialmedia">
+
+                    <a href="https://www.linkedin.com/in/pedro-henrique-vasques-de-souza-maciel-35b5092b7/"><i
+                            class="fa-brands fa-linkedin"></i></a>
+
+                    <a href="https://github.com/dev-vasques"><i class="fa-brands fa-github"></i></a>
+
+                    <a href=""><i class="fa-brands fa-behance"></i></a>
+
+
+
+
+
+                </div>
+
+
+                <p id="typing-text"></p>
+
+                <script>
+                    const texto = "Olá, meu nome é Pedro Henrique!";
+                    let i = 0;
+
+                    function digitar() {
+                        if (i < texto.length) {
+                            document.getElementById("typing-text").innerHTML += texto.charAt(i);
+                            i++;
+                            setTimeout(digitar, 150); 
+                        }
+                    }
+
+                    digitar();
+                </script>
+
+
+            
+
+
+
+
+
+
+
+
+
+        </section>
+
+    </main>
+
+    <footer>
+        <br><br><br><br><br><br>
+    </footer>
+
+</body>
+
+</html>
