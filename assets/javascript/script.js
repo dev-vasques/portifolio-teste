@@ -42,3 +42,20 @@ function verificarScroll() {
 
 window.addEventListener("scroll", verificarScroll);
 verificarScroll();
+
+
+    function redirecionarParaMobile() {
+        const isMobile = window.innerWidth <= 768;
+        const isMobilePage = window.location.pathname.includes("mobile.html");
+
+        if (isMobile && !isMobilePage) {
+            window.location.href = "mobile.html";
+        } else if (!isMobile && isMobilePage) {
+            window.location.href = "index.html"; // Ajuste para a página desktop correta
+        }
+    }
+
+    redirecionarParaMobile();
+    window.addEventListener("resize", redirecionarParaMobile);
+
+
