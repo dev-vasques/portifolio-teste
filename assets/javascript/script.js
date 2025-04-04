@@ -44,18 +44,16 @@ window.addEventListener("scroll", verificarScroll);
 verificarScroll();
 
 
-    function redirecionarParaMobile() {
-        const isMobile = window.innerWidth <= 768;
-        const isMobilePage = window.location.pathname.includes("mobile.html");
+  document.addEventListener("DOMContentLoaded", function () {
+    const link = document.getElementById("link-sobre");
 
-        if (isMobile && !isMobilePage) {
-            window.location.href = "mobile.html";
-        } else if (!isMobile && isMobilePage) {
-            window.location.href = "index.html"; // Ajuste para a página desktop correta
-        }
-    }
+    link.addEventListener("click", function (e) {
+      e.preventDefault(); // Impede o comportamento padrão do href
 
-    redirecionarParaMobile();
-    window.addEventListener("resize", redirecionarParaMobile);
+      const destino = document.getElementById("sobre");
 
-
+      if (destino) {
+        destino.scrollIntoView({ behavior: "smooth" });
+      }
+    });
+  });

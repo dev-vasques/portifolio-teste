@@ -4,7 +4,7 @@
     --color1: #000000;
     --color2: #02020241;
     --color3: #8b00ff;
-    --color4: #7a0000;
+    --color4: #2c3e50;
     --color5: #ffffff;
     --color6: #1c2833;
 }
@@ -154,10 +154,10 @@ header h1 {}
 
 #texto1 {
     top: 70%;
-    right: 40%;
+    right: 37%;
     position: absolute;
     color: var(--color5);
-    font-size: 45px;
+    font-size: 55px;
     box-shadow: 3px 3px 3px 3px(--color2);
 }
 
@@ -196,15 +196,16 @@ header h1 {}
 .ferramentas-icone i.escondido {
 
     font-size: 200px;
-    transition: all 0.5s ease;
+    transition: all 2s ease;
 
 
 
 }
+
 .escondido {
-    opacity: 0; 
-    transform: translateY(40px); 
-    transition: opacity 2s ease-out, transform 2s ease-out;
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 2.5s ease-out, transform 2.5s ease-out;
 }
 
 .visivel {
@@ -216,7 +217,69 @@ header h1 {}
 
     font-size: 220px;
     transition: font-size 0.3s ease-in-out;
-   
+
 
 
 }
+
+#sobre {
+    text-align: center;
+    margin-top: 10px;
+    padding: 3%
+}
+
+#sobre h3 {
+
+    color: var(--color4);
+    margin-bottom: 20px;
+    font-size: 50px;
+}
+
+#sobre p {
+    color: var(--color5);
+    font-size: 17px;
+    text-align: left;
+    display: flexbox;
+    padding: 0 35% 0% 35%;
+
+
+}
+
+.skills {
+    margin-top: 0.5%;
+    padding: 0 35% 0% 11.0%;
+    color: var(--color4);
+    
+
+}
+
+.skills-tag {
+
+    padding: 1% 34.8% 0% 34.8%;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 20px;
+    gap: 10px;
+    flex-wrap: 
+}
+
+.skills-tag span {
+    font-weight: 200;
+    padding: 1%;
+    background-color: var(--color4);
+    color: var(--color5);
+    height: auto;
+    flex-wrap: wrap;
+    width: 100px;
+    border-radius: 100px
+    
+}
+
+.skills-tag span:hover {
+    color: var(--color6);
+    background-color: var(--color5);
+}
+
+
