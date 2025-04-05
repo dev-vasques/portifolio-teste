@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
 :root {
     --color1: #000000;
@@ -13,11 +13,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Teko", sans-serif;
+    font-family: "Quicksand", sans-serif;
 }
 
 body {
     background-color: var(--color1);
+
 }
 
 
@@ -31,15 +32,19 @@ header {
 
 }
 
-header h1 {}
+header h1 {
+
+    
+}
 
 #header-nav {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    gap: 60px;
+    gap: 22px;
     color: var(--color5);
+    padding: 2%;
 
 
 
@@ -49,13 +54,21 @@ header h1 {}
 #header-nav a {
     color: var(--color5);
     text-decoration: none;
-    font-size: 22px;
-    transition: all 1s ease;
+    font-size: 20px;
+    transition: all 0.5s ease;
+    font: bold;
+    
+    border-radius: 50px;
+    
+    
+
 
 }
 
 #header-nav a:hover {
-    font-size: 20px;
+    
+    background-color: var(--color5);
+    color: var(--color4);
 }
 
 
@@ -115,7 +128,7 @@ header h1 {}
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 75px;
+    gap: 95px;
     margin-top: 20px;
     top: 63%;
     z-index: 2;
@@ -128,16 +141,16 @@ header h1 {}
 }
 
 .personal-socialmedia i {
-    font-size: 50px;
+    font-size: 70px;
     color: var(--color5);
     z-index: 2;
     position: absolute;
-    transform: translate(-54%, -50%);
+    transform: translate(-50%, -50%);
     transition: all 0.4s ease;
 }
 
 .personal-socialmedia i:hover {
-    font-size: 70px;
+    font-size: 90px;
 }
 
 .personal-text h3 {
@@ -153,21 +166,36 @@ header h1 {}
 }
 
 #texto1 {
-    top: 70%;
-    right: 37%;
+    top: 80%;
+    right: 12.2%;
+    z-index: 2;
+    position: absolute;
+    transform: translate(-50%, -50%);
     position: absolute;
     color: var(--color5);
-    font-size: 55px;
+    font-size: 43px;
     box-shadow: 3px 3px 3px 3px(--color2);
 }
 
 #texto2 {
-    top: 10%;
-    right: 27%;
+    top: 14%;
+    right: 22.2%;
     position: absolute;
     color: var(--color1);
-    font-size: 90px;
+    font-size: 65px;
     box-shadow: 3px 3px 3px 3px(--color2);
+    font-weight: 700;
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 1s ease-out, transforme 1s ease-out;
+}
+
+.fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 #ferramentas {
@@ -190,6 +218,7 @@ header h1 {}
     justify-content: center;
     text-align: center;
     gap: 85px;
+    margin-left: 2.5%;
 
 }
 
@@ -232,12 +261,13 @@ header h1 {}
 
     color: var(--color4);
     margin-bottom: 20px;
-    font-size: 50px;
+    font-size: 60px;
+    font-weight: 700;
 }
 
 #sobre p {
     color: var(--color5);
-    font-size: 17px;
+    font-size: 15px;
     text-align: left;
     display: flexbox;
     padding: 0 35% 0% 35%;
@@ -247,13 +277,15 @@ header h1 {}
 
 .skills {
     margin-top: 0.5%;
-    padding: 0 35% 0% 11.0%;
+    padding: 0 35% 0% 13.0%;
     color: var(--color4);
-    
+
 
 }
 
 .skills-tag {
+
+
 
     padding: 1% 34.8% 0% 34.8%;
     align-items: center;
@@ -261,25 +293,23 @@ header h1 {}
     flex-direction: row;
     justify-content: space-between;
     font-size: 20px;
-    gap: 10px;
-    flex-wrap: 
+    gap: 12px;
+ 
 }
 
 .skills-tag span {
-    font-weight: 200;
+    font-weight: 700;
     padding: 1%;
     background-color: var(--color4);
     color: var(--color5);
     height: auto;
+    cursor: pointer;
     flex-wrap: wrap;
-    width: 100px;
+    width: 140px;
     border-radius: 100px
-    
 }
 
 .skills-tag span:hover {
     color: var(--color6);
     background-color: var(--color5);
 }
-
-

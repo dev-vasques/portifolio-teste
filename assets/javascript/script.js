@@ -23,8 +23,8 @@ function escreverTexto(elementoID, texto, velocidade) {
 }
 
 window.addEventListener("load", function () {
-    escreverTexto("texto2", "Olá, bem-vindo ao meu Portifólio!", 75);
-    escreverTexto("texto1", "Meu nome é Pedro Henrique!", 75);
+    escreverTexto("texto2", "Olá, bem-vindo ao meu Portifólio!", 150);
+    
 });
 
 function verificarScroll() {
@@ -57,3 +57,20 @@ verificarScroll();
       }
     });
   });
+
+
+function mostrarAoScroll() {
+    const elementos = document.querySelectorAll(".fade-in")
+
+    elementos.forEach(el =>{
+        const posicao = el.getBoundingClientRect().top;
+        const alturaTela = window.innerHeight;
+
+        if(posicao < alturaTela - 100) {
+            el.classList.add("show");
+        }
+    });
+}
+
+window.addEventListener("scroll", mostrarAoScroll)
+window.addEventListener("load", mostrarAoScroll)
