@@ -82,8 +82,8 @@ header {
 
 .personal-photo img {
   border-radius: 100%;
-  height: auto;
-  width: 350px;
+  height: 350px;
+  width: 320px;
   transition: all 0.5s ease-in-out;
   opacity: 0;
 }
@@ -93,7 +93,8 @@ header {
 }
 
 .personal-photo img:hover {
-  width: 370px;
+  height: 360px;
+  width: 330px;
 }
 
 .personal-socialmedia {
@@ -203,7 +204,7 @@ header {
 
 .ferramentas-icone i:hover {
   font-size: 210px;
-  transition: font-size 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 #sobre {
@@ -223,7 +224,7 @@ header {
   color: var(--color5);
   font-size: 15px;
   text-align: left;
-  display: flexbox;
+  display: flex;
   padding: 0 35% 0% 35%;
 }
 
@@ -285,18 +286,19 @@ header {
   font-size: 30px;
   background-color: var(--color6);
   margin-top: 0.5%;
-  transition: all 4s ease-in;
 }
 
 #servicos-1 i {
   background-color: var(--color4);
-  height: auto;
+  height: 230px;
   width: 500px;
   padding: 3%;
   border-radius: 30px;
   margin-bottom: 5%;
   position: relative;
   box-shadow: 0px 4px 8px var(--color1);
+  transition: all 0.3s ease-in;
+  bottom: 30px;
 }
 
 #servicos-1 h2 {
@@ -310,8 +312,8 @@ header {
   font-weight: 200;
 }
 
-#servicos-1 i :hover {
-  bottom: 30px;
+#servicos-1 i:hover {
+  bottom: 40px;
 }
 
 #whatsapp {
@@ -377,7 +379,7 @@ header {
 #curriculo h1 {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: baseline;
 }
 #curriculo p {
   align-items: center;
@@ -390,4 +392,186 @@ header {
 #curriculo a {
   font-style: italic;
   color: inherit;
+}
+
+#rodape {
+  background-color: var(--color1);
+  color: var(--color5);
+  padding: 50px;
+  display: flex;
+  gap: 20px;
+  align-items: flex-end;
+}
+
+#rodape i {
+  font-size: 70px;
+}
+
+#rodape h2 {
+  font-size: 15px;
+}
+
+#rodape h1 {
+  font-weight: 1000px;
+}
+
+.rodape-icone {
+  font-size: 55px;
+}
+
+.contatos {
+  padding-left: 1000px;
+}
+/*====================================Mobile Part=========================
+===========================================================================
+=========================================================================*/
+@media (max-width: 700px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  /* ====== HEADER ====== */
+  header {
+    flex-direction: column;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  #header-nav {
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10px;
+    gap: 10px;
+  }
+
+  #header-nav a {
+    font-size: 12px;
+  }
+
+  /* ====== FOTO DE PERFIL ====== */
+  .personal-photo img {
+    height: 100px;
+    width: 100px;
+  }
+
+  .personal-landscape img {
+    width: 105%;
+    height: 105%;
+    display: block;
+  }
+
+  .personal-photo img:hover {
+    height: auto;
+    width: 110px;
+  }
+
+  /* ====== REDES SOCIAIS ====== */
+  .personal-socialmedia {
+    gap: 30px;
+    width: 100%;
+    top: 60%;
+    position: absolute;
+    flex-wrap: wrap;
+  }
+
+  .personal-socialmedia i {
+    font-size: 20px;
+  }
+
+  .personal-text h3 {
+    font-size: 2px;
+    top: 72%;
+  }
+
+  /* ====== TEXTOS SOBRE IMAGEM ====== */
+  #texto1 {
+    font-size: 10px;
+    top: 70%;
+    right: 5%;
+    text-align: center;
+  }
+  #texto2 {
+    font-size: 10px;
+    right: 30%;
+    text-align: center;
+  }
+
+  /* ====== SESSÃO SOBRE ====== */
+  #sobre h3 {
+    font-size: 28px;
+  }
+
+  #sobre p {
+    font-size: 14px;
+    padding: 0 8%;
+    text-align: justify;
+  }
+
+  /* ====== SKILLS ====== */
+  .skills {
+    padding: 0 8%;
+  }
+
+  .skills-tag {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 8%;
+    gap: 8px;
+  }
+
+  .skills-tag span {
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+  }
+
+  ferramentas-icone {
+    margin-top: 18px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 85px;
+    margin-left: 2.5%;
+  }
+
+  .ferramentas-icone i.escondido {
+    font-size: 80px;
+    transition: all 2s ease;
+  }
+
+  .escondido {
+    opacity: 0;
+    transform: translateY(1000px);
+    transition: opacity 2.5s ease-out, transform 2.5s ease-out;
+  }
+
+  .visivel {
+    opacity: 1;
+    transform: translateY(-100px);
+  }
+
+  .ferramentas-icone i:hover {
+    font-size: 85px;
+    transition: 0.3s ease-in-out;
+  }
+  .ferramentas-icone {
+    display: flex;
+    top: 30%;
+    gap: 35px;
+    margin-left: 2.5%;
+  }
+
+  #ferramentas {
+    background-color: var(--color6);
+    color: var(--color5);
+    height: 150px;
+  }
+  #curriculo p {
+    align-items: center;
+    gap: 60px;
+    font-size: 8px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: left;
+  }
 }
