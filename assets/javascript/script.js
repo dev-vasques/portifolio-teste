@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (linkSobre) {
     linkSobre.addEventListener("click", (e) => {
-      const isMobile = window.innerWidth <= 1000;
+      const isMobile = window.innerWidth <= 1200;
 
       if (isMobile) {
         e.preventDefault();
@@ -67,6 +67,7 @@ document.addEventListener("DOMContentLoaded", () => {
       } else {
         e.preventDefault();
         const destino = document.getElementById("sobre");
+
         if (destino) {
           destino.scrollIntoView({ behavior: "smooth" });
         }
