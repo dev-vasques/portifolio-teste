@@ -38,20 +38,6 @@ function verificarScroll() {
 window.addEventListener("scroll", verificarScroll);
 verificarScroll();
 
-document.addEventListener("DOMContentLoaded", function () {
-  const link = document.getElementById("link-sobre");
-
-  link.addEventListener("click", function (e) {
-    e.preventDefault(); // Impede o comportamento padrão do href
-
-    const destino = document.getElementById("sobre");
-
-    if (destino) {
-      destino.scrollIntoView({ behavior: "smooth" });
-    }
-  });
-});
-
 function mostrarAoScroll() {
   const elementos = document.querySelectorAll(".fade-in");
 
@@ -67,3 +53,24 @@ function mostrarAoScroll() {
 
 window.addEventListener("scroll", mostrarAoScroll);
 window.addEventListener("load", mostrarAoScroll);
+
+document.addEventListener("DOMContentLoaded", () => {
+  const linkSobre = document.getElementById("link-sobre");
+
+  if (linkSobre) {
+    linkSobre.addEventListener("click", (e) => {
+      const isMobile = window.innerWidth <= 1000;
+
+      if (isMobile) {
+        e.preventDefault();
+        window.location.href = "sobre.html";
+      } else {
+        e.preventDefault();
+        const destino = document.getElementById("sobre");
+        if (destino) {
+          destino.scrollIntoView({ behavior: "smooth" });
+        }
+      }
+    });
+  }
+});

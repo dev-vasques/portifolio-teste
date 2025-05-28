@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+
+:root {
+  --color1: #000000;
+  --color2: #02020241;
+  --color3: #8b00ff;
+  --color4: #2c3e50;
+  --color5: #ffffff;
+  --color6: #1c2833;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+  background-color: var(--color1);
+}
+
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+#sobre {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 10px;
+  margin: 4%;
+}
+
+#sobre h3 {
+  color: var(--color4);
+  margin-bottom: 20px;
+  font-size: 60px;
+  font-weight: 700;
+}
+
+#sobre p {
+  color: var(--color5);
+  font-size: 15px;
+  text-align: left;
+  display: flex;
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.5%;
+
+  color: var(--color4);
+}
+
+.skills-tag {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 18px;
+  gap: 12px;
+}
+
+.skills-tag span {
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color4);
+  color: var(--color5);
+  height: auto;
+  cursor: pointer;
+  flex-wrap: wrap;
+  width: 140px;
+  border-radius: 100px;
+}
+
+.skills-tag span:hover {
+  color: var(--color6);
+  background-color: var(--color5);
+}
